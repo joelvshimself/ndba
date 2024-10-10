@@ -76,6 +76,8 @@ app.delete('/noticias/:id', async (req, res) => {
   }
 });
 
+
+
 // Ruta de Health Check
 app.get('/health', (req, res) => {
   res.status(200).json({ mensaje: 'todo bien humano' });

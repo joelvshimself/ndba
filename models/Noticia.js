@@ -9,15 +9,15 @@ module.exports = (sequelize) => {
       autoIncrement: true,
     },
     Nombre: {
-      type: DataTypes.STRING(128),
+      type: DataTypes.TEXT,
       allowNull: false,
     },
     Descripcion: {
-      type: DataTypes.STRING(128),
+      type: DataTypes.TEXT,
       allowNull: false,
     },
     Link: {
-      type: DataTypes.STRING(128),
+      type: DataTypes.TEXT,
       allowNull: false,
     }
 
