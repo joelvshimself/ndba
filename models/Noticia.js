@@ -21,8 +21,9 @@ module.exports = (sequelize) => {
       allowNull: false,
     },
     IsVideo: {
-      type: DataTypes.BOOL,
+      type: DataTypes.BOOLEAN,
       allowNull: false,
+      defaultValue: false,
     }
 
   }, {
