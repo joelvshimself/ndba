@@ -29,8 +29,8 @@ app.use(express.json());
 // Crear noticia
 app.post('/noticias', async (req, res) => {
   try {
-    const { Nombre, Descripcion, Link } = req.body;
-    const nuevaNoticia = await Noticia.create({ Nombre, Descripcion, Link });
+    const { Nombre, Descripcion, Link, IsVideo } = req.body;
+    const nuevaNoticia = await Noticia.create({ Nombre, Descripcion, Link, IsVideo });
     res.status(201).json(nuevaNoticia);
   } catch (error) {
     res.status(500).json({ error: 'Error al crear noticia', detalle: error.message });

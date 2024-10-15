@@ -19,6 +19,10 @@ module.exports = (sequelize) => {
     Link: {
       type: DataTypes.TEXT,
       allowNull: false,
+    },
+    IsVideo: {
+      type: DataTypes.BOOL,
+      allowNull: false,
     }
 
   }, {
